@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Compatibility Test</title>
+  <link href="icon.ico" rel="icon" type="icon/ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <!---->
+
+  <h1>Compatibility Test</h1>
+  <h4>Instructions</h4>
+  <p>You will be asked to rate the persons characteristics on a scale of 1-10.</p>
+  <p>You will then be asked to give your standards on a scale of 0-10.</p>
+  <p>If you do not know a certain value, put 0 for both rating and standard.</p>
+
+  <hr>
+
+  <form id="myForm">
+    <div class="container">
+      <!-- STANDARDS -->
+      <div class="box" id="box1">
+        <p>Standards for wealth: </p>
+        <span id="moneyStandardsValue"></span>
+        <input type="range" id="moneyStandards" min="0" max="10" step="1" value="5">
+
+        <p>Standards for charisma: </p>
+        <span id="charismaStandardsValue"></span>
+        <input type="range" id="charismaStandards" min="0" max="10" step="1" value="5">
+
+        <p>Standards for looks: </p>
+        <span id="looksStandardsValue"></span>
+        <input type="range" id="looksStandards" min="0" max="10" step="1" value="5">
+
+        <p>Standards for hygine: </p>
+        <span id="hygineStandardsValue"></span>
+        <input type="range" id="hygineStandards" min="0" max="10" step="1" value="5">
+
+        <p>Standards for religiosity: </p>
+        <span id="religionStandardsValue"></span>
+        <input type="range" id="religionStandards" min="0" max="10" step="1" value="5">
+      </div>
+
+      <!-- RATINGS -->
+      <div class="box" id="box2">
+        <p>Rating for wealth: </p>
+        <span id="moneyRatingValue"></span>
+        <input type="range" id="moneyRating" min="0" max="10" step="1" value="5">
+
+        <p>Rating for charisma: </p>
+        <span id="charismaRatingValue"></span>
+        <input type="range" id="charismaRating" min="0" max="10" step="1" value="5">
+
+        <p>Rating for looks: </p>
+        <span id="looksRatingValue"></span>
+        <input type="range" id="looksRating" min="0" max="10" step="1" value="5">
+
+        <p>Rating for hygine: </p>
+        <span id="hygineRatingValue"></span>
+        <input type="range" id="hygineRating" min="0" max="10" step="1" value="5">
+
+        <p>Rating for religiosity: </p>
+        <span id="religionRatingValue"></span>
+        <input type="range" id="religionRating" min="0" max="10" step="1" value="5">
+      </div>
+    </div> <!--End of container div-->
+    
+    <div class="input">
+      <p>How many characteristics did you not know: </p>
+      <input type="number" id="dontwant">
+    </div>
+    
+    <br>
+    
+    <div class="button">
+      <button class="pressButton" type="submit">Submit</button>
+    </div>
+  </form>
+
+  <hr>
+
+  <p>You match at</p>
+  <p class="result"><span id="score"></span></p>
+  <br>
+  <br>
+</body>
+
+</html>

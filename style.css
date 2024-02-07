@@ -1,0 +1,57 @@
+@font-face {
+  src: url(PatrickHand-Regular.ttf);
+  font-family: PatrickHand;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  font-family: PatrickHand;
+  text-align: center;
+  color: #194569;
+  background-color: #DBECF4;
+}
+
+h1, .result{
+  text-shadow: 10px 10px 10px;
+  animation: updown 3s infinite;
+}
+
+.container {
+  display: flex; /* Use flexbox layout */
+}
+
+.box {
+  flex: 1; /* Distribute available space equally */
+  border: 1px solid #194569; /* Add border */
+  padding: 10px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding and border in box dimensions */
+}
+
+.pressButton {
+  width: 200px; /* Set the width of the button */
+  height: 50px; /* Set the height of the button */
+  border-radius: 10px;
+  background-color: #DBECF4;
+  box-shadow: 5px 5px 5px #1f4360;
+  font-family: PatrickHand;
+  color: #1f4360;
+  font-size: 20px;
+  transition-duration: .5s;
+}
+
+.pressButton:hover {
+  background-color: #c2e5f5; /* Green */
+  color: black;
+}
+
+#dontwant {
+  width: 50px; /* Adjust the width according to your preference */
+}
+
+@keyframes updown {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}
