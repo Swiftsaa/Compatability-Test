@@ -39,6 +39,7 @@ h1, .result{
   color: #1f4360;
   font-size: 20px;
   transition-duration: .5s;
+  cursor: pointer;
 }
 
 .pressButton:hover {
