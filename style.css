@@ -28,6 +28,10 @@ h1, .result{
   box-sizing: border-box; /* Include padding and border in box dimensions */
 }
 
+hr {
+  border: 1px dashed #194569;
+}
+
 .pressButton {
   width: 200px; /* Set the width of the button */
   height: 50px; /* Set the height of the button */
