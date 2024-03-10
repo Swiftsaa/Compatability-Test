@@ -24,7 +24,6 @@ h1, .result{
 
 .box {
   flex: 1; /* Distribute available space equally */
-  border: 1px solid #194569; /* Add border */
   padding: 10px; /* Add padding for spacing */
   box-sizing: border-box; /* Include padding and border in box dimensions */
 }
